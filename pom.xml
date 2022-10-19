@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>DAT100Javainnlevering2</groupId>
+  <artifactId>DAT100Javainnlevering2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	<dependency>
+	    <groupId>no.hvl</groupId>
+	    <artifactId>freja-annotations</artifactId>
+	    <version>1.1</version>  
+	</dependency>
+  </dependencies>
+  
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>no.hvl</groupId>
+            <artifactId>freja-maven-plugin</artifactId>
+            <version>1.1</version>
+            <configuration>
+                <targetPath>C:\Users\Erlend\eclipse-workspace\javainnlevering2output</targetPath>
+                <keepOldDescriptions>true</keepOldDescriptions>
+                <ignore>
+                	<ignore>pom.xml</ignore>
+                	<ignore>target</ignore>
+                	<ignore>bin</ignore>
+                </ignore>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+</project>

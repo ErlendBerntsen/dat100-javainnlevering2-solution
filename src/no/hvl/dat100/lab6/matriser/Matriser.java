@@ -1,8 +1,13 @@
 package no.hvl.dat100.lab6.matriser;
 
+import no.hvl.annotations.DescriptionReference;
+import no.hvl.annotations.Exercise;
+import no.hvl.annotations.TransformOption;
+
 public class Matriser {
 
 	// a)
+	@Exercise(id = {2,1}, transformOption = TransformOption.REPLACE_BODY)
 	public static void skrivUt(int[][] matrise) {
 		
 		// TODO
@@ -15,6 +20,7 @@ public class Matriser {
 	}
 
 	// b)
+	@Exercise(id = {2,2}, transformOption = TransformOption.REPLACE_BODY)
 	public static String tilStreng(int[][] matrise) {
 
 		// TODO
@@ -34,7 +40,8 @@ public class Matriser {
 	}
 
 	// c)
-	public static int[][] skaler(int tall, int[][] matrise) {
+	@Exercise(id = {2,3}, transformOption = TransformOption.REPLACE_BODY)
+	public static int[][] skaler(@DescriptionReference(exercises = {2}) int tall, int[][] matrise) {
 		
 		// TODO
 		int m = matrise.length;
@@ -54,7 +61,8 @@ public class Matriser {
 	}
 
 	// d)
-	public static boolean erLik(int[][] a, int[][] b) {
+	@Exercise(id = {2,4}, transformOption = TransformOption.REPLACE_BODY)
+	public static boolean erLik(@DescriptionReference(exercises = {2}) int[][] a, @DescriptionReference(exercises = {2}) int[][] b) {
 
 		// TODO
 		boolean like = true;
@@ -75,10 +83,10 @@ public class Matriser {
 	}
 	
 	// e)
+	@Exercise(id = {2,5}, transformOption = TransformOption.REPLACE_BODY)
 	public static int[][] speile(int[][] matrise) {
 
 		// TODO
-
 		int m = matrise.length;
 		int[][] speiletmatrice = new int[m][m];
 
@@ -93,6 +101,7 @@ public class Matriser {
 	}
 
 	// f)
+	@Exercise(id = {2,6}, transformOption = TransformOption.REPLACE_BODY)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 		// TODO

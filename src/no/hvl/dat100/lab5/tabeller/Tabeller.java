@@ -1,8 +1,13 @@
 package no.hvl.dat100.lab5.tabeller;
 
+import no.hvl.annotations.DescriptionReference;
+import no.hvl.annotations.Exercise;
+import no.hvl.annotations.TransformOption;
+
 public class Tabeller {
 
 	// a)
+	@Exercise(id = {1,1}, transformOption = TransformOption.REPLACE_BODY)
 	public static void skrivUt(int[] tabell) {
 
 		// TODO
@@ -14,12 +19,12 @@ public class Tabeller {
 		}
 
 		System.out.println("]");
-
 	}
-
+	
 	// b)
+	@Exercise(id = {1,2}, transformOption = TransformOption.REPLACE_BODY)
 	public static String tilStreng(int[] tabell) {
-
+		
 		// TODO
 		String str = "[";
 
@@ -40,7 +45,8 @@ public class Tabeller {
 	}
 
 	// c)
-	public static int summer(int[] tabell) {
+	@Exercise(id = {1,3}, transformOption = TransformOption.REPLACE_BODY)
+	public static int summer(@DescriptionReference(exercises = {1}) int[] tabell) {
 
 		// TODO
 		int sum = 0;
@@ -53,7 +59,9 @@ public class Tabeller {
 	}
 
 	// d)
-	public static boolean finnesTall(int[] tabell, int tall) {
+	@Exercise(id = {1,4}, transformOption = TransformOption.REPLACE_BODY)
+	public static boolean finnesTall(@DescriptionReference(exercises = {1}) int[] tabell,
+			@DescriptionReference(exercises = {1}) int tall) {
 
 		// TODO
 		boolean funnet = false;
@@ -74,7 +82,8 @@ public class Tabeller {
 	}
 
 	// e)
-	public static int posisjonTall(int[] tabell, int tall) {
+	@Exercise(id = {1,5}, transformOption = TransformOption.REPLACE_BODY)
+	public static int posisjonTall(@DescriptionReference(exercises = {1})int[] tabell, @DescriptionReference(exercises = {1})int tall) {
 
 		// TODO
 		int posisjon = -1;
@@ -95,7 +104,8 @@ public class Tabeller {
 	}
 
 	// f)
-	public static int[] reverser(int[] tabell) {
+	@Exercise(id = {1,6}, transformOption = TransformOption.REPLACE_BODY)
+	public static int[] reverser(@DescriptionReference(exercises = {1})int[] tabell) {
 
 		// TODO
 		int lengde = tabell.length;
@@ -109,6 +119,7 @@ public class Tabeller {
 	}
 
 	// g)
+	@Exercise(id = {1,7}, transformOption = TransformOption.REPLACE_BODY)
 	public static boolean erSortert(int[] tabell) {
 
 		// TODO
@@ -128,7 +139,8 @@ public class Tabeller {
 	}
 
 	// h)
-	public static int[] settSammen(int[] tabell1, int[] tabell2) {
+	@Exercise(id = {1,8}, transformOption = TransformOption.REPLACE_BODY)
+	public static int[] settSammen(@DescriptionReference(exercises = {1})int[] tabell1, @DescriptionReference(exercises = {1})int[] tabell2) {
 
 		// TODO
 		int lengde1 = tabell1.length;
